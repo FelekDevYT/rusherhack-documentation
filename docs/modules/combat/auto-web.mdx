@@ -1,0 +1,33 @@
+---
+sidebar_position: 10
+---
+
+# AutoWeb
+
+Automatically places web.
+
+## Settings
+
+- **Mode** (Enum): `Active`, `Macro`.
+- **Target** (Enum) — Who to target with webs:
+    - `Players`, `Holes`, `Self`
+- **WebDistance** — The distance to place webs from the target.
+- **IgnoreOwnHole** — Do not place webs in the hole you are currently standing in.
+- **Height** — The maximum height at which to place webs.
+- **Range** — The maximum placement range.
+- **Delay** — The delay between web placements.
+- **StrictDir** — Enforce strict direction checks.
+- **Raytrace** — Use raytracing for placement.
+- **Rotate** (Category)
+    - **Speed** — Speed of rotation.
+    - **Timing** (Enum): `Vanilla`, `Sequential`.
+- **Swap** (Category) — *Automatically swaps to obsidian:*
+    - **Silent** — *Swap server side only.*
+    - **Return** — *Returns to the previous item you were holding.*
+- **Render** (Category)
+    - **Color** — The color of the placement render.
+
+## Commands
+
+- `autoweb`
+- `autoweb <setting> [value]`

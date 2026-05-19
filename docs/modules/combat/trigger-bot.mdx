@@ -1,0 +1,29 @@
+---
+sidebar_position: 19
+---
+
+# TriggerBot
+
+Automatically attack entities that are on your crosshair.
+
+## Settings
+
+- **WeaponCheck** — Only attack while holding a valid weapon (Sword or Axe).
+- **AttackSpeed** — The speed at which the bot will click/attack.
+- **Targets** (Category) — *Configure the entity types to target:*
+    - **Players** (Sub-category):
+        - **FriendProtect** — Do not attack friends.
+        - **PrioritizeEnemies** — Focus on enemies first.
+            - **EnemiesOnly** — Only attack players on your enemy list.
+        - **IgnoreCreative** — Do not attack players in creative mode.
+    - **Hostiles** — Target hostile mobs.
+    - **Passives** (Sub-category):
+        - **IgnoreTamed** — Do not attack tamed animals.
+        - **IgnoreNamed** — Do not attack entities with custom names.
+    - **Neutrals** — Target neutral mobs.
+    - **Vehicles** — Target boats and minecarts.
+
+## Commands
+
+- `triggerbot`
+- `triggerbot <setting> [value]`

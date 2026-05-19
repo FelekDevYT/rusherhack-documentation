@@ -1,0 +1,37 @@
+# ESP
+
+Highlight entities and objects in the world.
+
+## Settings
+
+### Entities
+- **Mode** (Enum): `Shader`, `Box`, `Csgo`, `Image`.
+- **ColorMode** (Enum): `Static`, `Distance`.
+- **Targets** (Category) — *Entity types to highlight:*
+    - **Players** (Self), **Hostiles**, **Passives**, **Neutrals**, **Vehicles**, **Items**, **Projectiles**, **EndCrystals**, **ItemFrames**, **Others**.
+
+### Storages
+- **Mode** (Enum): `Shader`, `Box`, `Csgo`, `Image`.
+- **ColorMode** (Enum): `Static`, `Distance`.
+- **Range** — *Maximum distance to highlight storages.*
+- **Targets** (Category):
+    - **Chests**, **EnderChests**, **ShulkerBoxes**, **Barrels**, **Dispensers**, **Furnaces**, **Hoppers**, **Others**.
+
+### Miscellaneous
+- **ItemNames** (Category)
+    - **CustomFont**, **Scale**.
+- **Light** (Category) — *Shows where mobs can spawn:*
+    - **Level**, **ThroughWalls**.
+- **Tunnels** (Category)
+    - **Strictness**, **MinHeight**, **Render** (Lines, Quads), **Opacity**, **Color**, **LineWidth**.
+
+### Rendering Styles
+- **Shader Settings** (Category) — *RainbowGradient, Fill (Flat, Dots, Lines), Opacity, Outline (Width, Fade).*
+- **Box Settings** (Category) — *Fill Opacity, Outline Width.*
+- **CSGO Settings** (Category) — *Thickness, Outline.*
+- **Image Settings** (Category) — *Scale.*
+
+## Commands
+
+- `esp`
+- `esp <setting> [value]`

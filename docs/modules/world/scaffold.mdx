@@ -1,0 +1,33 @@
+# Scaffold
+
+Automatically bridges and towers with blocks.
+
+## Settings
+
+- **Blocks** (Enum): `All`, `Blacklist`, `Whitelist`.
+- **Swap** (Category):
+    - **Silent** — Swap server-side only.
+- **Safewalk** (Category):
+    - **Sneak** — *Sneak at the edge of blocks.*
+- **Expand** (Category) — *Place blocks around you:*
+    - **Range**, **OnlyForward**, **WhileMoving**.
+- **Tower** (Category) — *Build up faster:*
+    - **Strict** — *Disable tower for certain blocks for Updated-NCP.*
+- **StrictSprint** (Enum) — *Allows you to sprint on certain anticheats:*
+    - `Grim`, `Ncp`, `Off`.
+- **HoldY** — *Allows you to jump without increasing height.*
+- **Delay** — *Delay between block placements.*
+- **StrictDir**, **Raytrace**.
+- **Rotate** (Category)
+    - **Speed**.
+    - **Constant** (Category) — *Keep rotations for however many ticks for Updated-NCP:*
+        - **Ticks**.
+    - **Strict** — *Adjust rotations for Updated-NCP.*
+    - **Instant** — *Send rotations instantly.*
+- **Render** (Category):
+    - **Color**, **Width**, **DepthTest**.
+
+## Commands
+
+- `scaffold`
+- `scaffold whitelist/blacklist list/clear/remove/add`

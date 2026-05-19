@@ -1,0 +1,38 @@
+---
+sidebar_position: 9
+---
+
+# AutoTrap
+
+Automatically traps enemies with obsidian.
+
+## Settings
+
+- **Mode** (Enum) — When the module should attempt to trap:
+    - `Active`, `Until Move`, `Macro`
+- **MoveDelay** — The delay before re-trapping after a target moves.
+- **TrapType** (Enum) — The pattern used for trapping:
+    - `Normal`, `Minimal`, `Exposed`
+- **FriendProtect** — Do not trap players on your friends list.
+- **IgnoreSelf** — Prevent the module from accidentally trapping you.
+- **LogoutSpots** — Keep traps active at locations where players have logged out.
+- **AntiStep** — Places blocks to prevent the target from using Step to escape.
+- **EnemyRange** — The maximum distance a target can be from you.
+- **PlaceRange** — The maximum distance at which you can place blocks.
+- **PlaceDelay** — The delay between placing individual blocks.
+- **StrictDir** — Enforce strict direction checks for block placement.
+- **Raytrace** — Use raytracing to verify block placement visibility.
+- **Rotate** (Category)
+    - **Speed** — Speed of rotation towards placement positions.
+    - **Timing** (Enum) — *Rotation timing method used for placements:*
+        - `Vanilla`, `Sequential`
+- **Swap** (Category) — *Automatically swaps to obsidian:*
+    - **Silent** — *Swap server side only.*
+    - **Return** — *Returns to the previous item you were holding.*
+- **Render** (Category)
+    - **Color** — Customize the color of the trap preview.
+
+## Commands
+
+- `autotrap`
+- `autotrap <setting> [value]`

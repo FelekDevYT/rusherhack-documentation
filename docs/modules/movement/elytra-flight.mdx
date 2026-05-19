@@ -1,0 +1,77 @@
+---
+sidebar_position: 3
+---
+
+# ElytraFly
+
+Fly easier with elytras.
+
+## Settings
+
+- **Mode** (Enum) — The flight mode to use:
+    - `Control`, `Boost`, `Packet`, `Bounce`, `Off`
+- **TakeOff** (Category) — Automatically take off when you jump:
+    - **Descending** — Only activate when you are falling back down; Useful for 1.12.2 servers.
+    - **Timer** — Uses timer to assist in taking off.
+- **AutoRedeploy** — Automatically redeploy into elytra if the server un-deploys you.
+- **PauseInLiquids** — Stops the module when you are in water or lava.
+
+### Control Settings
+- **Acceleration** (Category):
+    - **Speed** — How fast you accelerate.
+    - **MaxSpeed** — The maximum speed allowed in this mode.
+- **Speed** — Constant horizontal speed.
+- **VerticalSpeed** — Speed when ascending or descending.
+- **Fireworks** (Category) — Use firework rockets while flying:
+    - **Inventory** — Pull fireworks from inventory.
+    - **LagRedeploy** — Redeploy on lag detection.
+    - **NoIdle** — Don't use fireworks while idle.
+    - **DelayedAscend** — Delays ascending after using a firework.
+    - **Await** — Waits for specific conditions.
+    - **DelayMode** (Enum): `Dynamic`, `Static`.
+    - **StaticDelay** — The delay used in Static mode.
+- **Ascend** (Enum):
+    - `Aim`, `Jump`, `Off`
+- **GlideSpeed** — Speed while gliding without active input.
+
+### Boost Settings
+- **Acceleration** (Category): `Speed`, `MaxSpeed`.
+- **Automatic** (Category):
+    - **BoostTicks** — Number of ticks to boost for.
+    - **TargetY** — The minimum Y level to ascend to.
+    - **MaximumY** — The maximum Y level to ascend to.
+    - **EmergeSpeed** — Speed required to start ascending in km/h.
+    - **Constant** — Boost constantly.
+    - **Stabilize** — Hold glide while above TargetY.
+    - **EmergePitch** — Pitch used when emerging.
+    - **GainPitch** — Pitch used to gain altitude.
+- **Speed** — Movement speed.
+- **SpeedLimit** — Maximum speed to reach in km/h.
+- **UpdatedNCP** — Increase speed after a rubberband.
+- **PitchCheck** — Only boost while looking down.
+- **UseForward** — Boost while holding forward.
+- **Pause** — Pause boosting.
+
+### Packet Settings
+- **Acceleration** (Category): `Speed`, `MaxSpeed`.
+- **Speed** — Horizontal speed.
+- **OnGround** — Stay on ground while flying.
+- **AutoRestart** — Restarts the flight if stopped.
+- **AntiAFK** — Prevents being kicked for AFK.
+
+### Bounce Settings
+- **Acceleration** (Category): `Speed`, `MaxSpeed`.
+- **PitchSpoof** (Category):
+    - **Pitch** — The spoofed pitch angle.
+    - **Control** — Only activate while looking down.
+- **Packet** — Prevent durability loss.
+- **Boost** (Category): `Speed`.
+- **Delay** — Bypass 2b2t's anticheat.
+- **AutoJump** — Automatically jump to start the bounce.
+
+- **Debug** — Shows debug information.
+
+## Commands
+
+- `elytrafly`
+- `elytrafly <setting> [value]`

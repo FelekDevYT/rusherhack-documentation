@@ -1,0 +1,30 @@
+# AutoDisconnect
+
+Automatically logs you out when you have low health.
+
+## Settings
+
+- **AutoToggle** — *Disable after disconnecting* to prevent an infinite loop.
+- **IllegalDisconnect** — *Disconnects by kicking the player from the server* using invalid packets.
+    - **AlwaysOn** — Constantly keep this method active.
+- **StopAutoRC** — *Disable AutoReconnect* while this module is active.
+- **Health** (Category)
+    - **Amount** — The health threshold to trigger a disconnect.
+    - **TotemCheck** — *Don't disconnect if holding totem.*
+        - **Threshold** — Disconnect if your totem count drops below this.
+- **TotemPop** — Disconnect as soon as one of your totems pops.
+- **LethalCrystal** — Disconnect if a crystal is nearby that would kill you.
+- **Proximity** (Category) — Disconnect if specific entities are within Range:
+    - **Players**, **Hostiles**, **Neutrals**, **Passives**, **EndCrystals**, **TNTMinecarts**.
+    - **Range** — The detection radius.
+    - **Coordinates** — Disconnect if you enter a specific range of set coordinates.
+        - **Range** — The radius around the coordinates.
+- **Time** — Disconnect after being online for a specific amount of time.
+- **YLevel** (Category)
+    - **Level** — Disconnect when falling below or rising above this Y level.
+
+## Commands
+
+- `autodisconnect`
+- `autodisconnect <setting> [value]`
+- `autodisconnect coordinates <x> <z>`

@@ -1,0 +1,31 @@
+---
+sidebar_position: 2
+---
+
+# BoatFly
+
+Fly with boats.
+
+## Settings
+
+- **Speed** — The horizontal speed of the boat fly.
+- **Vertical** — The vertical speed of the boat fly.
+- **FixYaw** — Locks the boat's rotation to your camera.
+- **Duck** — Allows the boat to fly downwards.
+- **NCP** (Category)
+    - **TicksToPause** — Amount of ticks to pause for NCP.
+    - **ConsecutiveLagBacks** — Threshold for lagbacks before stopping.
+- **AntiKick** (Category)
+    - **Mode** — *(Enum)* The method used to prevent kicking.
+    - **Glide** — Slowly glides down to prevent detection.
+    - **Offset** — The y-offset for the antikick.
+    - **Frequency** — How often the antikick triggers.
+    - **Ascending** (Sub-category)
+        - **Frequency** — Frequency specifically for ascending movement.
+- **ToggleOnDisconnect** — Automatically disables the module on disconnect.
+- **BoatScale** — Modifies the visual size of the boat.
+
+## Commands
+
+- `boatfly`
+- `boatfly <setting> [value]`

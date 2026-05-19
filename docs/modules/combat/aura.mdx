@@ -1,0 +1,40 @@
+# Aura
+
+Automatically attack entities nearby.
+
+## Settings
+
+- **Reach** — The maximum distance to attack entities.
+- **HitDelay** (Category)
+    - **Delay** — The delay between attacks.
+    - **TPS Sync** — *Sync attack speed with server tps.*
+- **AutoBlock** — *Automatically block with your shield* after attacking.
+- **KeepSprint** — *Prevents the game from cancelling your sprint* when hitting an entity.
+- **WeaponCheck** — *Only attack while holding a weapon* (Sword or Axe).
+- **Rotate** (Category)
+    - **Speed** — Speed of rotation towards the target.
+    - **Timing** (Enum) — *Timing method used for attacking:*
+        - `Vanilla`, `Sequential`
+- **Targets** (Category) — *Configure the entity types to target:*
+    - **Players** (Sub-category):
+        - **FriendProtect** — Do not attack players on your friends list.
+        - **PrioritizeEnemies** — Focus attacks on players on your enemies list.
+            - **EnemiesOnly** — Only attack enemies, ignoring other players.
+        - **IgnoreCreative** — Do not attack players in creative mode.
+    - **Hostiles** — Attack hostile mobs (Zombies, Skeletons, etc.).
+    - **Passives** — Attack passive mobs (Cows, Pigs, etc.).
+        - **IgnoreTamed** — Do not attack tamed animals.
+        - **IgnoreNamed** — Do not attack entities with name tags.
+    - **Neutrals** — Attack neutral mobs (Pigmen, Golems, etc.).
+    - **Vehicles** — Attack boats and minecarts.
+    - **Projectiles** — Attack incoming projectiles.
+    - **ArmorStands** — Attack armor stands.
+- **Priority** (Enum) — *How targets are prioritized:*
+    - `Angle`, `Distance`, `Health`
+- **PauseWhileEating** — Pause attacking while you are using an item.
+- **DisableOnDeath** — Automatically disable the module when you die.
+
+## Commands
+
+- `aura`
+- `aura <setting> [value]`

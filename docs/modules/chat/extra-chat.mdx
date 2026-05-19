@@ -1,0 +1,31 @@
+# ExtraChat
+
+Modify the game chat.
+
+## Settings
+
+- **MaxLines** — *Change the maximum amount of lines that the game chat can have before deleting them.*
+- **PlayerHeads** — *Render head of the sender's skin* next to their message.
+- **Preserve** — *Don't delete game chat when you leave a server.*
+- **Background** — *Toggle the chat background.*
+- **CustomFont** — Use a custom font for chat messages.
+- **Animations** (Enum) — *Animate the entry of new chat messages:*
+    - `Off`, `Slide Up`, `Slide Right`
+- **Length** — *How long the animation should play for.*
+- **Mentions** (Category)
+    - **Self** — Notify when your name is mentioned.
+    - **Friends** — Notify when a friend is mentioned.
+    - **Highlight** (Sub-category):
+        - **Text** (Bold, Italic, Underline).
+        - **Background** — Color for the mention background.
+        - **Color** — Color for the mention text.
+        - **FriendColor** — *Use the global Friend color.*
+- **Sound** — Play a sound when a mention or specific message is received.
+- **IgnoreSelfMsgs** — Do not apply modifications to your own messages.
+- **NameProtect** — *Redact your name from game-chat.*
+- **StripBlankLines** — Remove empty lines from the chat box.
+
+## Commands
+
+- `extrachat`
+- `extrachat <setting> [value]`

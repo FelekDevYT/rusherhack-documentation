@@ -1,0 +1,34 @@
+# AutoSurround
+
+Automatically surrounds your feet with obsidian.
+
+## Settings
+
+- **Mode** (Enum): `Active`, `Until Move`, `Macro`.
+- **MoveDelay** — Delay before re-surrounding after moving.
+- **Center** (Category) — *Centers the player* in the middle of the block:
+    - **Strict** — Uses stricter centering to avoid placement failure.
+- **Dynamic** — *Widen surround if necessary* to cover larger areas.
+- **Instant** (Category) — *Instantly place surround blocks:*
+    - **Grim** — *Grim bypass for instant rotations.*
+    - **Sync** — Sync placement with server ticks.
+- **PlaceDelay** — Delay between placing blocks.
+- **StrictDir** — Enforce strict placement direction checks.
+- **Raytrace** — Use raytracing to verify block visibility.
+- **Rotate** (Category)
+    - **Speed** — Speed of rotation.
+    - **Timing** (Enum) — *Rotation timing method used for placements:*
+        - `Vanilla`, `Sequential`
+- **Swap** (Category) — *Automatically swaps to obsidian:*
+    - **Silent** — *Swap server side only.*
+    - **Return** — *Returns to the previous item you were holding.*
+- **AntiCity** (Enum): `Off`, `Explode`, `Expand`.
+- **AntiFacePlace** — Automatically places blocks to prevent face-placing.
+- **DisableOnDeath** — Disables the module when you die.
+- **Render** (Category)
+    - **Color**, **Width**, **DepthTest**.
+
+## Commands
+
+- `autosurround`
+- `autosurround <setting> [value]`

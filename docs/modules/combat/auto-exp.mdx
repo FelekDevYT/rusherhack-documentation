@@ -1,0 +1,25 @@
+# AutoEXP
+
+Automatically repair your armor.
+
+## Settings
+
+- **Mode** (Enum) — Method for using experience bottles:
+    - `Macro`, `Auto`
+- **Durability%** — *The percentage at which armor should be repaired.*
+- **DynamicArmor** (Category) — *Takes off and reequips armor to reduce xp usage:*
+    - **Delay** — Delay between armor swaps.
+    - **PauseAutoArmor** — *Pause the AutoArmor module* while repairing.
+    - **Smart** — *Pauses while a player is in range.*
+        - **Range** — The detection radius.
+    - **AllowXCarry** — *Stores unequipped armor in your crafting slots.*
+    - **IgnoreElytra** — *Don't unequip your elytra if you are flying.*
+- **AutoSwitch** (Category) — *Automatically switches to xp bottles:*
+    - **Silent** — *Switch server side only.*
+    - **Return** — *Returns to the previous item you were holding.*
+- **Rotate** — Rotates your head downwards while throwing XP bottles.
+
+## Commands
+
+- `autoexp`
+- `autoexp <setting> [value]`

@@ -1,0 +1,45 @@
+# FastBreak
+
+Break blocks faster.
+
+## Settings
+
+- **Mode** (Enum): `Normal`, `Packet`.
+- **Speed** — The mining speed multiplier.
+- **Delay** — *Ticks between destroying blocks.*
+- **Instamine** — *Instantly mine some blocks that normally wouldn't be.*
+- **TPSSync** — *Syncs mining to the server TPS.*
+- **Grim** — *Grim bypass.*
+- **Raytrace** — *Prevent mining through walls.*
+- **Rotate** — *Rotates to the block you are currently mining.*
+- **AutoSwitch** (Category) — *Automatically switches to best tool:*
+    - **Silent** (Sub-category): `MultiTask`.
+    - **Return** — *Returns to the previous item you were holding.*
+    - **Inventory** — *Pull tools out of inventory.*
+    - **UpdatedNCP** — *UpdatedNCP adjustments.*
+- **InstantRebreak** — *Instantly break the last block you mined.*
+- **AutoRebreak** — *Automatically remine the last block you mined.*
+- **Queue** (Category) — *Queue up blocks to be mined:*
+    - **Priority** (Enum): `Newest`, `Oldest`, `Closest`.
+    - **CancelCurrent** — *Cancel the current mining progress.*
+    - **DoubleBreak** — *Breaks multiple blocks at the same time.*
+- **PauseWhileEating** — Pause mining while using items.
+- **Blocks** (Enum): `All`, `Blacklist`, `Whitelist`.
+- **Abort** — *Bind to abort breaking.*
+- **Render** (Category)
+    - **Mode** (Enum): `Static`, `In`, `Out`, `In Out`.
+    - **StartColor** — Starting color of the animation.
+    - **EndColor** — Ending color of the animation.
+    - **Fill** — *Fill the box.*
+    - **Outline** (Category):
+        - **Width** — *Width of outline.*
+        - **Static** — Keep outline static.
+    - **DepthTest** — *Hide hidden sides.*
+- **Debug** — Show debug info.
+
+## Commands
+
+- `fastbreak`
+- `fastbreak <setting> [value]`
+- `fastbreak whitelist list/clear/add/remove`
+- `fastbreak blacklist list/clear/remove/add`

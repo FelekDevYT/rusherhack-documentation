@@ -1,0 +1,55 @@
+# AutoCrystal
+
+Automatically places and explodes end crystals for crystal pvp.
+
+## Settings
+
+### Targeting
+- **Targeting** — *How targets are selected:*
+    - **Players** (FriendProtect, PrioritizeEnemies [EnemiesOnly], IgnoreCreative).
+    - **Hostiles**, **Passives** (IgnoreTamed, IgnoreNamed), **Neutrals**, **Vehicles**.
+    - **Priority** (Enum): `Angle`, `Damage`, `Damage Ratio`, `Crystal Distance`, `Distance`, `Health`.
+    - **CheckLimit** — *Maximum targets to check while selecting.*
+- **Render (Target ESP)**:
+    - **Color**, **Fill**, **Outline** (Width), **DepthTest**.
+
+### Explode
+- **Speed** — *Maximum crystal attacks per second.*
+- **Range** — *Maximum range to crystal.*
+- **WallRange** — *Maximum range to crystal if it is hidden.*
+- **HitAttempts** — *Maximum times you can attack a crystal.*
+- **TicksExisted** — *Minimum ticks a crystal must exist* before breaking.
+- **DamageCalcs**: `MinDamage`, `SelfDamageLimit`, `SelfDamageRatio`, `IgnoreRatioUnder`.
+- **Instant**: `MSWait` (Milliseconds to wait before hitting).
+- **ClientSync** — *Sync breaking with the client.*
+- **AntiWeakness** — *Switch to a weapon when you have weakness:*
+    - **Return**: `Ticks` (Ticks to wait until you swap back).
+- **WhileEating**, **WhileMining**.
+- **Render (Crystal ESP)**: `Swing`, `Color`, `Fill`, `Outline` (Width), `DepthTest`.
+
+### Place
+- **Speed** — *Maximum crystal places per second.*
+- **Range**, **WallRange**, **IgnoreTicks**.
+- **DamageCalcs**: `MinDamage`, `SelfDamageLimit`, `SelfDamageRatio`, `IgnoreRatioUnder`.
+- **Instant**: `MSWait` (Milliseconds to wait before placing).
+- **Await**: `Timeout` (Ticks to pause placing).
+- **ClientSync**, **1.12.2**, **CrystalPvP.CC**, **IgnoreTerrain**.
+- **AutoSwitch**: `Mode` (Switch, Swap), `Silent`, `Return` (Ticks).
+- **FacePlace**: `Health`, `ArmorPercent`, `NonFullArmor`, `Speed`, `Force` (Bind).
+- **WhileEating**, **WhileMining**.
+- **Render (Place renders)**: `Swing`, `Damage` (CustomFont, Color), `Box` (Mode: Static, Slide, Fade; SlideSpeed, FadeSpeed, Color, Fill, Outline, DepthTest).
+
+### Rotate & Predict
+- **Rotate**: `Timing` (Vanilla, Sequential, Alternate, Instant), `Constant` (Ticks), `WaitForRotate` (UnpauseWait), `ExplodeSpeed`, `PlaceSpeed`, `RandomizeSpeed`, `StrictDir` (Off, Normal, Strict).
+- **Predict**: `Motion` (TargetExtrapolation, SelfExtrapolation).
+
+### Miscellaneous
+- **PauseAtHP** — *Health to pause on.*
+- **Priority** (Enum) — *What action should run first:* `Explode`, `Place`.
+- **Metadata** — *What to display on hud:* `Target`, `CrystalCount`, `Damages`, `Speeds`.
+- **Debug Options**: `Debug`, `Debug2`, `VisualDebug`, `VisualDebug2`.
+
+## Commands
+
+- `autocrystal`
+- `autocrystal <setting> [value]`

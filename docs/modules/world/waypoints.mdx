@@ -1,0 +1,27 @@
+# Waypoints
+
+Save points in the world and view them.
+
+## Settings
+
+- **Mode** (Enum): `Coords`, `Distance`, `None`.
+- **Nametag** (Category):
+    - **CustomFont**, **Vertical**, **Scale**.
+- **Beam** — Show a beacon-like beam at the waypoint.
+- **Box** — Render a box at the waypoint.
+- **Tracer** — Draw a line from the player to the waypoint.
+- **AutoDisconnect** (Category):
+    - **Range** — Automatically disconnect when reaching range.
+- **Color** — The color of the waypoint marker.
+
+## Commands
+
+- `waypoints`
+- `waypoints <setting> [value]`
+- `waypoints add <name>`
+- `waypoints add <name> <x> <z> [dimension] [server]`
+- `waypoints add <name> <x> <y> <z> [dimension] [server]`
+- `waypoints remove <name>`
+- `waypoints toggle <name>`
+- `waypoints list`
+- `waypoints clear`

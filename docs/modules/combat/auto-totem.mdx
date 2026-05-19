@@ -1,0 +1,29 @@
+# AutoTotem
+
+Automatically places a totem in your offhand.
+
+## Settings
+
+- **Mode** (Enum): `Normal`, `Health`.
+- **Health** — The health threshold to swap to a totem.
+- **AbsorptionCheck** — Include absorption hearts in health calculations.
+- **AlternateItem** (Enum) — Item to hold when totems are not needed:
+    - `Crystal`, `Gapple`, `Crapple`, `Shield`
+- **AutoBlock** (Category) — *Automatically blocks using your shield:*
+    - **OnlyInExplosionRange** — *Only block your shield near an explosion.*
+- **AlternateWhen** (Category) — When to switch to the alternate item:
+    - **RequiresAutoCrystal**, **SwordUse**, **KeyHeld** (Toggle).
+- **TotemWhen** (Category) — Specific triggers to force a totem:
+    - **FallDistance**, **NonFullArmor**, **LethalCrystal**.
+- **HotbarPriority** — Prioritize taking totems from the hotbar.
+- **Inventory** — Search the entire inventory for totems.
+- **Delay** — The delay between offhand swaps.
+- **Soft** — Do not replace an item if one is already in the offhand.
+- **StopMotion** — Stops movement while swapping items.
+- **StopEating** — Stops eating while swapping to a totem.
+- **WhileEating** — Allow swapping while in the middle of eating.
+
+## Commands
+
+- `autototem`
+- `autototem <setting> [value]`

@@ -1,0 +1,19 @@
+# Start Errors
+
+:::warning
+Not all error fixes may be listed here, and if you are unable to fix the error using these instructions, please contact support at support@rusherhack.org or open a ticket on the Discord server.
+:::
+
+## Key Terms
+- **HWID (Hardware ID)** — your computer's unique ID.
+
+| Error code | Description | How to fix |
+| :--- | :--- | :--- |
+| **0x1000** | An attempt to verify the computer's HWID failed. This happens when changing a PC or its components. | Send an email to **support@rusherhack.org** with a request to reset your HWID or open a ticket on the Discord server. |
+| **0x1200** | RusherHack loader can't find authentication files on your drive. | **Linux:**<br/>1. Install Flatseal.<br/>2. Enable "All user files" for Minecraft.<br/>3. Or run: `sudo flatpak override <Flatpak Id> --filesystem=home`<br/><br/>**Windows:**<br/>1. Check antivirus.<br/>2. Reinstall via RusherHack Installer. |
+| **0x1250** | General profile authentication error | Reinstall RusherHack using the RusherHack Installer from your personal account. |
+| **0x1400** | LoaderUpdateFailed: The loader found an update but was unable to install it. | 1. Check internet connection.<br/>2. Try a VPN service.<br/>3. Manually reinstall via RusherHackInstaller. |
+| **0x1600** | InjectionFailed: Error injecting RusherHack into Minecraft | 1. Check game version.<br/>2. Try running without other mods.<br/>3. Update Java version. |
+| **0x1650** | ClassLoaderError: Error initializing RusherHack files | 1. Try a different launcher.<br/>2. Check for mod conflicts.<br/>3. Check internet connection. |
+| **0x1800** | Error connecting to RusherHack servers | 1. Check internet connection.<br/>2. Use DNS: `1.1.1.1`<br/>3. Try a VPN. |
+| **No code** | The RusherHack and Minecraft versions don't match. | Check if you are using the correct version of Minecraft. |

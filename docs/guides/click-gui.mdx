@@ -1,0 +1,75 @@
+# ClickGUI & Colors
+
+Global interface settings and color management for RusherHack.
+
+---
+
+# ClickGUI
+
+The main graphical user interface for managing modules and their settings.
+
+## Settings
+
+- **Scale** — *The size of the interface.*
+- **AllowExternalModulesInDefaultCategories** — *Display modules from installed Plugins within the primary categories (Combat, Movement, etc.) instead of a separate Plugin tab.*
+
+:::tip Interface Scaling
+If the ClickGUI is too large to navigate, you can manually reset the scale using the command: `*clickgui scale <value>`. A value of `1.0` is default.
+:::
+
+## Commands
+
+- `clickgui`
+- `clickgui <setting> [value]`
+- `clickgui scale <value>`
+
+---
+
+# Colors
+
+Global configuration for client themes, entity visuals, and storage highlights.
+
+## Settings
+
+### Rainbow Settings
+- **Mode** (Enum) — *The style of the rainbow animation:* `Static`, `Horizontal`, `Vertical`.
+- **Speed** — *How fast the rainbow cycles.*
+- **Saturation** — *The intensity of the color.*
+- **Brightness** — *The lightness of the color.*
+- **Start / End** — *The range of the color spectrum to cycle through.*
+
+### Entities
+- **Friends** — *Color for players on your friends list.*
+- **Enemies** — *Color for players on your enemies list.*
+- **Players** — *Default color for other players.*
+- **Hostiles** — *Color for hostile mobs (Zombies, Creepers, etc.).*
+- **Passives** — *Color for passive mobs (Cows, Sheep, etc.).*
+- **Neutrals** — *Color for neutral mobs (Pigmen, Golems).*
+- **EndCrystals** — *Color for End Crystals.*
+- **Vehicles** — *Color for Boats and Minecarts.*
+- **Items** — *Color for dropped items on the ground.*
+- **Misc** — *Color for other entities (Experience Orbs, etc.).*
+
+:::info Priority
+Friend and Enemy colors will always take priority over the generic 'Players' color setting.
+:::
+
+### Block Entities
+- **Chests** — *Color for standard chests.*
+- **EnderChests** — *Color for Ender chests.*
+- **ShulkerBoxes** — *Color for all shulker boxes.*
+- **Barrels** — *Color for barrels.*
+- **Misc** — *Color for other storage (Hoppers, Dispensers, Furnaces).*
+
+### Distance Colors
+- **Far** — *The color applied to objects at a distance.*
+- **Close** — *The color applied to objects nearby.*
+
+:::tip Dynamic Visuals
+Distance colors are particularly useful for modules like **Tracers** or **ESP**, allowing you to visually gauge proximity based on color shifting.
+:::
+
+## Commands
+
+- `colors`
+- `colors <setting> [value]`

@@ -1,0 +1,25 @@
+# AntiSpam
+
+Remove spam from chat.
+
+## Settings
+
+- **Mode** (Enum): `Ignore`, `Hide`.
+- **Debug** — Enable debug messages for spam filters.
+- **Command** — Filter out repetitive commands.
+- **Exclusions** (Category)
+    - **Friends** — Do not filter messages from friends.
+- **Whispers** — Filter out spam from private messages.
+- **Combine** (Category)
+    - **Depth** — How many messages to combine into one.
+- **Frequency** (Category)
+    - **Messages** — Maximum number of messages allowed in a timeframe.
+    - **Time** — The timeframe for frequency checks.
+- **Blacklist** (Category)
+    - **Words** — List of blocked words.
+    - **Regex** — Block messages matching a regular expression.
+
+## Commands
+
+- `antispam`
+- `antispam <setting> [value]`
