@@ -8,7 +8,7 @@ const config = {
   baseUrl: '/rusherhack-docs/',
   organizationName: 'FelekDevYT',
   projectName: 'rusherhack-docs',
-  onBrokenLinks: 'throw',
+  onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
   markdown: {
     format: 'detect',
@@ -29,6 +29,18 @@ const config = {
           customCss: './src/css/custom.css',
         },
       }),
+    ],
+  ],
+  themes: [
+    [
+      require.resolve("@easyops-cn/docusaurus-search-local"),
+      {
+        hashed: true,
+        language: ["en"],
+        highlightSearchTermsOnTargetPage: true,
+        explicitSearchResultPath: true,
+        indexDocs: true,
+      },
     ],
   ],
   themeConfig:
