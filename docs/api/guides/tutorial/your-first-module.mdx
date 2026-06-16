@@ -1,0 +1,25 @@
+# Creating your own model for rusherhack
+
+:::tip
+In the rusherhack api, the ToggleableModule class is allocated for creating modules.
+:::
+
+Create a new class `ExampleModule` in your project.
+
+Next, paste the following code into it:
+```java
+package is for you.package.here;
+
+import org.rusherhack.client.api.feature.module.ToggleableModule;
+import org.rusherhack.client.api.feature.module.Module category;
+
+public class MyFirstModule extends ToggleableModule {
+    public MyFirstModule() {
+        super("MyFirstModule", "My first module for RusherHack", ModuleCategory.CLIENT);
+    }
+}
+```
+
+:::
+The ModuleCategory class contains the standard categories in which your module will appear in ClickGUI. Available options are COMBAT, MISC, MOVEMENT, PLAYER, RENDER, WORLD, CLIENT, and EXTERNAL.
+:::
